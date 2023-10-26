@@ -1,0 +1,128 @@
+.burger * {
+    transition: all 0.5s ease;
+}
+.burger__wrap {
+    display:none;
+    justify-content:flex-end;
+    align-items:center;
+}
+.burger {
+    height:20px;
+    width:30px;
+    position:relative;
+}
+.burger__line_1,
+.burger__line_2,
+.burger__line_3 {
+    width:100%;
+    height:2px;
+    background:var(--c1);
+    position:absolute;
+}
+.burger__line_1 {
+    top:0;
+    left:0;
+}
+.burger__line_2 {
+    top:50%;
+    transform:translateY(-50%);
+    left:0;
+}
+.burger__line_3 {
+    bottom:0;
+    left:0;
+}
+.burger:hover .burger__line_1 {
+    transform:rotate(-45deg);
+    margin-top:2px;
+    width:50%;
+    background:var(--c4);
+}
+.burger:hover .burger__line_2 {
+    width:150%;
+}
+.burger:active .burger__line_2 {
+    width:150%;
+    transform:translateX(500%);
+}
+.burger:hover .burger__line_3 {
+    transform:rotate(45deg);
+    margin-bottom:2px;
+    width:50%;
+    background:var(--c4);
+}
+.burger_cross {
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    align-items:flex-start;
+}
+.burger_cross .burger__line_1 {
+    transform: rotate(45deg) translateY(-50%);
+    transform-origin: top left;
+    background:var(--c4);
+}
+.burger_cross .burger__line_2 {
+    transform:translateX(500%);
+}
+.burger_cross .burger__line_3 {
+    transform: rotate(-45deg) translateY(50%);
+    transform-origin: bottom left;
+    background:var(--c4);
+}
+.burger_cross:hover .burger__line_1 {
+    transform-origin: none;
+    margin-top:8px;
+}
+.burger_cross:hover .burger__line_2 {
+    transform:translateX(0%);
+}
+.burger_cross:hover .burger__line_3 {
+    transform-origin: none;
+    margin-bottom:8px;
+}
+
+.burger_nav {
+    display:none;
+}
+.burger_menu {
+    height:100vh;
+    position: sticky;
+    z-index: 999;
+}
+.burger_menu .burger_nav {
+    display:flex;
+}
+header ._2 {
+    display:none;
+}
+.burger_menu ._2 {
+    display:flex;
+}
+@media (max-width:1280px) {
+    header .nav {
+        display:none;
+    }
+    header .link {
+        display:none;
+    }
+    header .burger__wrap {
+        display:flex;
+    }
+}
+.burger_menu {
+    background-image:linear-gradient(90deg, var(--c2), var(--c3));
+    animation: gradient_back 3s ease infinite;
+    background-size: 400% 100%;
+}
+@keyframes gradient_back {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

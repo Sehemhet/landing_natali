@@ -1,0 +1,38 @@
+/*
+back btn
+*/
+/*
+btn css
+*/
+
+.btn {
+    display:flex;
+    position:relative;
+    overflow:hidden;
+}
+.btn a {
+    margin:10px;
+    padding-left:10px;
+    padding-right:10px;
+    color:var(--c1);
+}
+.btn:before {
+    content:'';
+    display:flex;
+    transform:translateX(-81%);
+    height:100%;
+    width:100%;
+    top:0;
+    background:var(--c4);
+    position:absolute;
+    transition:1s all;
+    z-index:-1;
+    padding:5px;
+}
+
+.btn:hover:before {
+    transform:translateX(0%);
+}
+.btn:hover a {
+    color:var(--c2);
+}

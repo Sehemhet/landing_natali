@@ -1,0 +1,67 @@
+/*
+RESET
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    border:none;
+}
+body {
+    background:url("../img/0.webp") center center, center center;
+}
+@font-face {
+    font-family: 't1';
+    src: url('../fonts/BebasNeueCyrillic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: -3px;
+}
+
+@font-face {
+    font-family: 't2';
+    src: url('../fonts/FiraSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 't3';
+    src: url('../fonts/FiraSans-Regular.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+header, main, footer, section {
+    overflow:hidden;
+}
+
+
+button {
+    border:none;
+    all: initial;
+}
+a:hover,
+button:hover {
+    cursor:pointer;
+}
+img, iframe {
+    border:none;
+    height:100%;
+    width:100%;
+}
+input {
+    outline:none;
+}
+a {
+    text-decoration:none;
+    color: inherit;
+}
+
+header ul {
+    list-style:none;
+}
+
+
+
+
+
