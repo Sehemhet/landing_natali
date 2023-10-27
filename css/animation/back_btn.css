@@ -30,6 +30,7 @@ btn css
     padding:5px;
 }
 
+
 .btn:hover:before {
     transform:translateX(0%);
 }

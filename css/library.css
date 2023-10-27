@@ -15,7 +15,15 @@ library
 
 .gold {
     background: url('../img/3.webp') center no-repeat;
-    background-size: contain;  /* или 'cover', в зависимости от ваших требований */
+    background-size: contain;
+    max-width:800px;
+    width:100%;
+    position:absolute;
+    z-index:-1;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    height:100%;
 }
 
 .t1 {font-family:var(--t1); line-height:0.8;}
@@ -27,7 +35,7 @@ library
 .fs52 {font-size:52px;}
 .fs170 {font-size:170px;}
 @media (max-width:1280px) {
-    .fs24 {font-size:16px;}
+    .fs24 {font-size:18px;}
 }
 .fs82 {font-size:82px;}
 @media (max-width:768px) {
@@ -45,6 +53,15 @@ library
 .b3 {background:var(--c3);}
 .b4 {background:var(--c4);}
 .b5 {background:var(--c5);}
+
+/*
+time effect
+*/
+.s08 {transition-delay: .8s;}
+.s12 {transition-delay: 1.2s;}
+.s16 {transition-delay: 1.6s;}
+
+
 
 .f {display:flex;}
 .fw {flex-wrap:wrap;}
@@ -70,11 +87,13 @@ library
 .gap10 {gap:10px;}
 .gap20 {gap:20px;}
 .gap30 {gap:30px;}
+.gap_ {gap:2%;}
 .gap100 {gap:100px;}
 
 .f__a {flex:1 1 auto;}
 .f100 {flex:1 1 100%;}
-.f300 {flex:1 1 300px;}
+.f300 {flex:0 1 300px;}
+.f310 {flex:1 1 310px;}
 .f400 {flex:1 1 400px;}
 
 .T_t::first-letter {text-transform: uppercase;}
@@ -93,25 +112,42 @@ library
 .w400M {max-width:400px;}
 .h {height:100%;}
 .h100vh {height:100vh;}
-@media (orientation: portrait) {
+
+@media (orientation: portrait) or (max-width: 767px) {
     .h100vh {
         height: auto;
     }
     #_1 {
-        padding-top:42px;
+        padding-top: 50px;
+    }
+    #_2 ._2 .f300 {
+        flex: 1 1 300px;
+    }
+    #_2 ._2 {
+        flex-wrap: wrap;
     }
 }
+
+
 .h90vh {height:90vh;}
 .matte {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.5);
 }
+
+
+
+
+
+
+
 
 .br25 {border-radius:25px;}
 ._b_1b {border-bottom:1px solid var(--c1);}
 
 
+.pad_ {padding:2%}
 .pad50t {padding-top:50px;}
 .pad50b {padding-bottom:50px;}
 
@@ -147,9 +183,9 @@ library
 .z8 {z-index:8;}
 .z9 {z-index:9;}
 
-.top {top:0px;}
-.right {right:0px;}
-.bottom {bottom:0px;}
+.top {top:0px;top:0%;}
+.right {right:0px;right:0%;}
+.bottom {bottom:0px;bottom:0%;}
 .left {left:0px;left:0%;}
 
 .center {top: 50%;transform: translateY(-50%);}

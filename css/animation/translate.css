@@ -1,3 +1,24 @@
 /*
 translate anim
 */
+.anim_left,
+.anim_right,
+.anim_scale {
+    opacity:0;
+    animation: none;
+}
+.anim_left {
+    transform: translate(-100%,0%);
+}
+.anim_right {
+    transform: translate(100%,0%);
+}
+.anim_scale {
+    transform:scale(.1);
+}
+.anim_active {
+    transform: translate(0%,0%);
+    opacity: 1;
+    transform:scale(1);
+    transition: all 1s;
+}

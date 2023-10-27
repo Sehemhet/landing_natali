@@ -39,3 +39,44 @@ window.addEventListener('scroll', function() {
     document.querySelector('header').classList.remove('activate_under_shadow')
   }
 });
+
+
+var header = document.querySelector('header'); // предполагаем, что у вашей шапки есть тег <header>
+var lastScroll = Date.now();
+var hideDelay = 3000; // 5 секунд
+
+// Функция, которая скрывает шапку
+function hideHeader() {
+    if (Date.now() - lastScroll > hideDelay) {
+        header.style.opacity = '0';
+        header.style.transition = 'opacity 0.5s'; // плавное исчезновение
+    }
+}
+
+// Установите таймер для проверки активности скролла каждую секунду
+setInterval(hideHeader, 1000);
+
+// Событие прокрутки, которое обновляет время последнего скролла и показывает шапку
+window.addEventListener('scroll', function() {
+    lastScroll = Date.now();
+    header.style.opacity = '1';
+});
+
+//активация анимационных элементов
+function animActiv(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+      change.target.classList.add('anim_active');
+    } else {
+    change.target.classList.remove('anim_active');
+    }
+  });
+};
+let animOpt = { threshold: [0.01] };
+let animAct = new IntersectionObserver(animActiv, animOpt);
+let animItems = document.querySelectorAll('.anim_left,.anim_right,.anim_scale');
+for (let el of animItems) {
+  animAct.observe(el);
+};
+
+
