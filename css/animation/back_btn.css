@@ -9,12 +9,14 @@ btn css
     display:flex;
     position:relative;
     overflow:hidden;
+    z-index:2;
 }
 .btn a {
     margin:10px;
     padding-left:10px;
     padding-right:10px;
     color:var(--c1);
+    z-index:3;
 }
 .btn:before {
     content:'';
@@ -26,7 +28,7 @@ btn css
     background:var(--c4);
     position:absolute;
     transition:1s all;
-    z-index:-1;
+    z-index:1;
     padding:5px;
 }
 

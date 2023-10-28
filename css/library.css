@@ -7,6 +7,7 @@ library
     --c3:rgba(244, 237, 228, 1);        /* color 3      beige */
     --c4:rgba(141, 0, 0, 1);            /* color 4      red */
     --c5:rgba(0, 0, 0, 0);              /* color 5      opacity */
+    --c6:rgba(244, 237, 228, 0.8);      /* color 6      beige opacity */
 
     --t1: "t1";
     --t2: "t2";
@@ -26,14 +27,15 @@ library
     height:100%;
 }
 
-.t1 {font-family:var(--t1); line-height:0.8;}
+.t1 {font-family:var(--t1); line-height:0.8;letter-spacing: -4px;}
 .t2 {font-family:var(--t2);}
 .t3 {font-family:var(--t3);}
 
 .fs18 {font-size:18px;}
+.fs14 {font-size:14px;}
 .fs24 {font-size:24px;}
 .fs52 {font-size:52px;}
-.fs170 {font-size:170px;}
+.fs170 {font-size:170px;margin-top:10px;}
 @media (max-width:1280px) {
     .fs24 {font-size:18px;}
 }
@@ -43,16 +45,19 @@ library
 }
 
 .c1 {color:var(--c1);}
+.c1 {color:var(--c1);}
 .c2 {color:var(--c2);}
 .c3 {color:var(--c3);}
 .c4 {color:var(--c4);}
 .c5 {color:var(--c5);}
+.c6 {color:var(--c6);}
 
 .b1 {background:var(--c1);}
 .b2 {background:var(--c2);}
 .b3 {background:var(--c3);}
 .b4 {background:var(--c4);}
 .b5 {background:var(--c5);}
+.b6 {background:var(--c6);}
 
 /*
 time effect
@@ -89,10 +94,13 @@ time effect
 .gap30 {gap:30px;}
 .gap_ {gap:2%;}
 .gap100 {gap:100px;}
+.gap200 {gap:200px;}
 
 .f__a {flex:1 1 auto;}
 .f100 {flex:1 1 100%;}
+.f200 {flex:1 1 200px;}
 .f300 {flex:0 1 300px;}
+.f300_00 {flex:0 0 300px;}
 .f310 {flex:1 1 310px;}
 .f400 {flex:1 1 400px;}
 
@@ -112,6 +120,7 @@ time effect
 .w400M {max-width:400px;}
 .h {height:100%;}
 .h100vh {height:100vh;}
+.h200 {height:200px;}
 
 @media (orientation: portrait) or (max-width: 767px) {
     .h100vh {
@@ -151,14 +160,22 @@ time effect
 .pad50t {padding-top:50px;}
 .pad50b {padding-bottom:50px;}
 
+.pad100r {padding-right:100px;}
+
 .pad5t {padding-top:5px;}
-.pad5t {padding-bottom:5px;}
+.pad5b {padding-bottom:5px;}
+.pad5l {padding-left:5px;}
+.pad5r {padding-right:5px;}
+.pad5 {padding:5px;}
 
 .pad10t {padding-top:10px;}
 .pad10b {padding-bottom:10px;}
 
+.pad50b {padding-bottom:50px;}
+
 .pad130t {padding-top:130px;}
 .pad180t {padding-top:180px;}
+.pad180r {padding-right:180px;}
 
 .pad30t {padding-top:30px;}
 .pad30r {padding-right:30px;}
@@ -166,7 +183,7 @@ time effect
 .pad30l {padding-left:30px;}
 .pad30 {padding:30px;}
 
-.pad5b {padding-bottom:5px;}
+
 
 .mar200t {margin-top:200px;}
 
@@ -188,6 +205,7 @@ time effect
 .bottom {bottom:0px;bottom:0%;}
 .left {left:0px;left:0%;}
 
+
 .center {top: 50%;transform: translateY(-50%);}
 .middle {left: 50%;transform: translateX(-50%);}
 .c {margin:0 auto;}
@@ -204,4 +222,21 @@ time effect
     .br700 {display:block;}
     .del700 {display:none;}
     ._16_9 {aspect-ratio: auto;}
+}
+
+
+
+/*
+.in {
+    border:1px solid blue;
+}
+._16_9 {
+    border:1px solid red;
+}
+.h100vh {
+    border:1px solid green;
+}
+
+.black * {
+    border:1px solid black;
 }

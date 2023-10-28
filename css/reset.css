@@ -15,7 +15,6 @@ body {
     src: url('../fonts/BebasNeueCyrillic.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-    letter-spacing: -3px;
 }
 
 @font-face {
@@ -59,7 +58,7 @@ a {
     color: inherit;
 }
 
-header ul {
+ul {
     list-style:none;
 }
 
