@@ -33,7 +33,7 @@
 
 .review {
     width:370px;
-    height:480px;
+    min-height:200px;
 }
 
 
