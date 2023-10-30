@@ -8,6 +8,8 @@ library
     --c4:rgba(141, 0, 0, 1);            /* color 4      red */
     --c5:rgba(0, 0, 0, 0);              /* color 5      opacity */
     --c6:rgba(244, 237, 228, 0.8);      /* color 6      beige opacity */
+    --c7:rgba(255, 255, 255, 0.8);      /* color 2      white opacity*/
+    --c8:rgba(255, 255, 255, 1);       /* color 2      white */
 
     --t1: "t1";
     --t2: "t2";
@@ -35,6 +37,7 @@ library
 .fs14 {font-size:14px;}
 .fs24 {font-size:24px;}
 .fs52 {font-size:52px;}
+.fs80 {font-size:80px;}
 .fs170 {font-size:170px;margin-top:10px;}
 @media (max-width:1280px) {
     .fs24 {font-size:18px;}
@@ -51,6 +54,8 @@ library
 .c4 {color:var(--c4);}
 .c5 {color:var(--c5);}
 .c6 {color:var(--c6);}
+.c7 {color:var(--c7);}
+.c8 {color:var(--c8);}
 
 .b1 {background:var(--c1);}
 .b2 {background:var(--c2);}
@@ -58,6 +63,8 @@ library
 .b4 {background:var(--c4);}
 .b5 {background:var(--c5);}
 .b6 {background:var(--c6);}
+.b7 {background:var(--c7);}
+.b8 {background:var(--c8);}
 
 /*
 time effect
@@ -89,6 +96,7 @@ time effect
 .fae {align-items:end;}
 
 .gap50 {gap:50px;}
+.gap5 {gap:5px;}
 .gap10 {gap:10px;}
 .gap20 {gap:20px;}
 .gap30 {gap:30px;}
@@ -99,10 +107,18 @@ time effect
 .f__a {flex:1 1 auto;}
 .f100 {flex:1 1 100%;}
 .f200 {flex:1 1 200px;}
-.f300 {flex:0 1 300px;}
+.f300 {flex:0 1 25%;}
 .f300_00 {flex:0 0 300px;}
 .f310 {flex:1 1 310px;}
 .f400 {flex:1 1 400px;}
+.f350__01 {flex:0 1 350px;}
+.f800__01 {flex:0 1 800px;}
+.f100__01 {flex:0 1 100px;}
+.f200__01 {flex:0 1 200px;}
+.f33 {flex:1 1 30%;}
+.f66 {flex:1 1 60%;}
+.f50% {flex:1 1 50%;}
+
 
 .T_t::first-letter {text-transform: uppercase;}
 .t {text-transform: lowercase;}
@@ -115,6 +131,7 @@ time effect
 
 
 .w {width:100%;}
+.w100 {min-width:100%;}
 .w50 {width:50%;}
 .w300m {min-width:300px;}
 .w400M {max-width:400px;}
@@ -167,6 +184,8 @@ time effect
 .pad5l {padding-left:5px;}
 .pad5r {padding-right:5px;}
 .pad5 {padding:5px;}
+.pad20 {padding:20px;}
+.pad10 {padding:10px;}
 
 .pad10t {padding-top:10px;}
 .pad10b {padding-bottom:10px;}
@@ -216,6 +235,7 @@ time effect
 .hide {overflow:hidden;}
 
 ._16_9 {aspect-ratio: 16 / 9;}
+._1_1 {aspect-ratio: 1 / 1;}
 .br700 {display:none;}
 
 @media (max-width:700px) {
@@ -225,8 +245,8 @@ time effect
 }
 
 
-
 /*
+
 .in {
     border:1px solid blue;
 }

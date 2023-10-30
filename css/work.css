@@ -32,14 +32,21 @@
 
 
 .review {
-    width:370px;
-    min-height:200px;
+    display:flex;
+    flex-direction:column;
+    max-width:400px;
+    min-width:200px;
+    gap:20px;
+    overflow:hidden;
+    padding:5px;
 }
 
 
-#_5 .in .box2 {
-    left:400px;
-    top:35%;
+
+.wrap_pagination {
+    position:absolute;
+    top:30%;
+    left:50px;
 }
 
 .pagination {
@@ -75,4 +82,10 @@
 .pag_r {
     right:0;
     bottom:0;
+}
+
+
+/*
+* {
+    border:1px solid black;
 }

@@ -7,6 +7,9 @@
     .fs170 {
     font-size: 145px;
     }
+    .fs52 {
+        font-size:40px;
+    }
 }
 @media (max-width:1610px) {
     .fs170 {
@@ -92,7 +95,7 @@
     font-size: 60px;
     }
 }
-
+*/
 @media (max-width:700px) {
     #_1 .box1,
     #_1 .box2,
@@ -124,4 +127,8 @@
     .fs170 {
     font-size: 55px;
     }
+}
+
+.green * {
+    border:1px solid green;
 }

@@ -1,0 +1,59 @@
+.cross {
+    height:20px;
+    width:20px;
+    position:relative;
+    transition:.5s all;
+}
+.cross:hover {
+    transform:rotate(45deg);
+}
+.cross ._1,
+.cross ._2,
+.cross ._3,
+.cross ._4 {
+    position:absolute;
+    display:flex;
+    background:var(--c4);
+    overflow:hidden;
+    transition:.5s all;
+}
+.cross ._1 {
+    top:50%;
+    transform:translateY(-50%);
+    right:50%;
+    width:50%;
+    height:2px;
+}
+.cross ._2 {
+    top:0px;
+    right:50%;
+    transform:translateX(50%);
+    width:2px;
+    height:50%;
+}
+.cross ._3 {
+    top:50%;
+    transform:translateY(-50%);
+    left:50%;
+    width:50%;
+    height:2px;
+}
+.cross ._4 {
+    bottom:0px;
+    right:50%;
+    transform:translateX(50%);
+    width:2px;
+    height:50%;
+}
+.cross:active ._1 {
+    width:0%;
+}
+.cross:active ._3 {
+    width:0%;
+}
+.cross:active ._2 {
+    height:0%;
+}
+.cross:active ._4 {
+    height:0%;
+}
