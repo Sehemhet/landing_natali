@@ -30,13 +30,6 @@ body {
     font-weight: 300;
     font-style: normal;
 }
-header, main, footer, section {
-    overflow:hidden;
-}
-footer {
-    background:var(--c2);
-}
-
 button {
     border:none;
     all: initial;
@@ -57,7 +50,6 @@ a {
     text-decoration:none;
     color: inherit;
 }
-
 ul {
     list-style:none;
 }

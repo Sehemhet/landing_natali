@@ -5,6 +5,9 @@ back btn
 btn css
 */
 
+.btn_wrap {
+    display:flex;
+}
 .btn {
     display:flex;
     position:relative;
@@ -12,16 +15,18 @@ btn css
     z-index:2;
 }
 .btn a {
-    margin:10px;
-    padding-left:10px;
-    padding-right:10px;
+    display:flex;
+    margin:5px;
+    padding-left:5px;
+    padding-right:5px;
     color:var(--c1);
-    z-index:3;
+    z-index:99;
+    white-space: nowrap;
 }
 .btn:before {
     content:'';
     display:flex;
-    transform:translateX(-81%);
+    transform:translateX(-82%);
     height:100%;
     width:100%;
     top:0;
@@ -31,7 +36,6 @@ btn css
     z-index:1;
     padding:5px;
 }
-
 
 .btn:hover:before {
     transform:translateX(0%);

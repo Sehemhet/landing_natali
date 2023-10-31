@@ -1,0 +1,40 @@
+.point {
+    height:10px;
+    width:10px;
+    border:2px solid var(--c4);
+    background: var(--c4);
+}
+
+.point_li {
+    display:flex;
+}
+.point_li:before {
+    content: '';
+    display: flex;
+    height: 10px;
+    width: 10px;
+    margin: 5px 15px 0px 0px;
+    flex: 0 0 10px;
+    background: var(--c1);
+}
+
+/*
+.point_start:before {
+    content: '';
+    display: flex;
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+    border:2px solid var(--c5);
+    background: var(--c1);
+}
+
+.point_end:after {
+    content: '';
+    display: flex;
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+    border:2px solid var(--c5);
+    background: var(--c1);
+}

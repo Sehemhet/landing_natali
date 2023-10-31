@@ -1,70 +1,26 @@
-#_1 .box1 {
-    left: 0;
-    width:300px;
-    top:15%;
-}
-#_1 .box2 {
-    bottom:18%;
+#_1 .in ._1 ._2 {
+    top:40%;
     left:0;
 }
-#_1 .box3 {
-    top:88%;
-    left:41%;
-}
-#_1 .box4 {
-    right:0;
-    bottom:0;
-    width:50%;
-    max-width:860px;
-}
-#_1 .box4 img {
-    margin-top:40px;
-    object-fit:contain;
-}
-#_1 .box5 {
-    left:0;
-    top:88%;
-}
-#_1 .box6 {
-    top:15%;
-    right:0;
-}
 
-
+.review_slider {
+    height:500px;
+}
 .review {
-    display:flex;
-    flex-direction:column;
-    max-width:400px;
-    min-width:200px;
-    gap:20px;
-    overflow:hidden;
-    padding:5px;
+    width:340px;
+    height:480px;
+    flex: 0 0 340px;
 }
-
-
-
-.wrap_pagination {
-    position:absolute;
-    top:30%;
-    left:50px;
+.review img {
+    border-radius:10px;
 }
 
 .pagination {
-    display:flex;
     height:100px;
-    width:100px;
-    position:relative
-}
-.pagination::before {
-    content:'';
-    display:flex;
     width:100%;
-    position:absolute;
-    left:0;
-    bottom:50%;
-    background:var(--c1);
-    height:1px;
-    transform:rotate(-45deg);
+    display:flex;
+    justify-content:space-between;
+    position:relative;
 }
 .pagination button {
     height:50px;
@@ -72,20 +28,30 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    position:absolute;
     font-weight:300;
 }
 .pag_l {
+    position:absolute;
     left:0;
     top:0;
 }
 .pag_r {
+    position:absolute;
     right:0;
     bottom:0;
 }
-
+.slash {
+    margin:auto auto;
+    height:100px;
+    width:2px;
+    background:var(--c1);
+    transform:rotate(45deg);
+}
+#_5 ._3 {
+    display:flex;
+}
 
 /*
 * {
-    border:1px solid black;
+    border:1px solid green;
 }
