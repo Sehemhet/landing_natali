@@ -1,0 +1,18 @@
+@keyframes up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.anim_up_05s {
+    animation: up .5s forwards;
+}
+.anim_up_10s {
+    animation: up 1s forwards;
+}
+.anim_up_15s {
+    animation: up 1.5s forwards;
+}

@@ -1,0 +1,53 @@
+/*
+arrow
+*/
+
+.arrow {
+    width:16px;
+    height:16px;
+    margin-bottom:4px;
+    position:relative;
+    transition:.3s all;
+}
+.arrow:before {
+    content:'';
+    display:flex;
+    height:2px;
+    top: 0px;
+    right: 0px;
+    width: calc(13px * 1.414);
+    position:absolute;
+    transform-origin: top right;
+    transform: rotate(-45deg); /* добавляем поворот */
+}
+
+._c1 {
+    border-top:2px solid var(--c1);
+    border-right:2px solid var(--c1);
+}
+._c1:before {
+    background:var(--c1);
+    transform:rotate(-45deg);
+}
+._c4 {
+    border-top:2px solid var(--c4);
+    border-right:2px solid var(--c4);
+}
+._c4:before {
+    background:var(--c4);
+}
+._c8 {
+    border-top:2px solid var(--c8);
+    border-right:2px solid var(--c8);
+}
+._c8:before {
+    background:var(--c8);
+}
+
+.arrow:hover {
+    transform:scale(1.1);
+}
+.arrow:active {
+    transform:scale(1.2);
+}
+

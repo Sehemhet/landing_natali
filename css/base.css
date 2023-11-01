@@ -8,27 +8,48 @@ header, main, section, footer {
     width:100%;
     overflow:hidden;
 }
+header nav ul li a:hover {
+    font-family:var(--t2);
+    transition:.3 easy;
+}
+header nav ul li a:active {
+    font-family:var(--t2);
+    transition:.3 easy;
+}
+.header_back_active {
+    background:var(--c8);
+}
+.lang a:hover {
+    font-family:var(--t2);
+    transition:.3 easy;
+}
+.lang a:active {
+    font-family:var(--t2);
+    transition:.3 easy;
+}
+
 .in {
     max-width:1920px;
-    max-height:1080px;
     padding-left:100px;
     padding-right:100px;
     margin:0 auto;
 }
+.h1080M {max-height:1080px;}
 .h100vh {height:100vh;}
 ._16_9 {aspect-ratio: 16 / 9;}
 .Y1024 {display:none;}
 
+
+
 @media (orientation: portrait) {
-    .h100vh, .in, ._16_9 {
+    .h100vh, .h1080M, ._16_9 {
         max-height:none !important;
         height: auto !important;
         aspect-ratio: auto;
     }
 }
-
-@media (max-width:1280px) {
-    .h100vh, .in, ._16_9 {
+@media (max-width:1279px) {
+    .h100vh, .h1080M, ._16_9 {
         max-height:none !important;
         height: auto !important;
         aspect-ratio: auto;
@@ -76,6 +97,18 @@ header, main, section, footer {
         width:100%;
         gap:50px;
         flex: 1 1 auto;
+    }
+    #_8 .in ._2 .el {
+        flex-wrap:wrap;
+    }
+    #_8 .in ._2 .el .w340M,
+    #_8 .in ._2 .el .w500M {
+        max-width:100%;
+    }
+    #_8 .in ._2 .el ._3 {
+        width:100%;
+        flex:1 1 100%;
+        max-width:100%;
     }
 }
 @media (max-width:736px) {
@@ -125,7 +158,6 @@ header, main, section, footer {
     #_3 .in ._2 ._2 ._2 .w50 {
         width:100%;
     }
-
     #_4 .in ._3 {
         .w70 {
             width:100%;
@@ -147,14 +179,37 @@ header, main, section, footer {
         flex-direction:row;
         justify-content:center;
     }
+    #_7 .in .f ._2 ._1 {
+        flex-wrap:wrap;
+    }
+    #_7 .in .f ._2 ._1 {
+        .fs52 {
+            width:100%;
+            text-align:center;
+        }
+        .fs18 {
+            width:100%;
+            text-align:center;
+        }
+        .el {
+            justify-content:flex-end;
+            width:100%;
+        }
+    }
     footer * {
         display:flex;
         justify-content:center;
         width:100%;
         gap:10px;
     }
+
 }
 
+@media (min-width: 1921px) {
+    .h100vh {
+        height: auto;
+    }
+}
 
 
 

@@ -19,7 +19,7 @@ library
 .gold {
     background: url('../img/3.webp') top no-repeat;
     background-size: contain;
-    max-width:800px;
+    max-width:600px;
     width:100%;
     position:absolute;
     z-index:-1;
@@ -35,17 +35,15 @@ library
 
 .fs18 {font-size:18px;}
 .fs14 {font-size:14px;}
+.fs10 {font-size:10px;}
 .fs24 {font-size:24px;}
-.fs32 {font-size: 18px;}
-
-.fs52 {font-size:52px;letter-spacing: -2px;}
+.fs20 {font-size:20px;}
+.fs32 {font-size: 32px;}
+.fs36 {font-size: 36px;letter-spacing: 0px;}
+.fs52 {font-size:52px;letter-spacing: 0px;}
+.fs44 {font-size:44px;letter-spacing: 0px;}
 .fs80 {font-size:80px;}
-
-.fs170 {
-    font-size: 46px;
-    letter-spacing: -2px;
-}
-
+.fs170 {font-size: 46px;letter-spacing: -2px;}
 @media (min-width: 360px) and (max-width: 1920px) {
     .fs170 {
         font-size: calc(46px + 124 * ((100vw - 360px) / 1560));
@@ -55,7 +53,6 @@ library
         font-size: calc(18px + 14 * ((100vw - 360px) / 1560));
     }
 }
-
 @media (min-width: 1921px) {
     .fs170 {
         font-size: 170px;
@@ -65,13 +62,6 @@ library
         font-size: 32px;
     }
 }
-
-
-
-
-
-
-
 
 
 .c1 {color:var(--c1);}
@@ -101,7 +91,6 @@ time effect
 .s16 {transition-delay: 1.6s;}
 
 
-
 .f {display:flex;}
 .fw {flex-wrap:wrap;}
 .fwn {flex-wrap:nowrap;}
@@ -116,7 +105,6 @@ time effect
 ._f_f_ {justify-content:space-around;}
 .f_f {justify-content:space-between;}
 ._f_ {justify-content:center;}
-
 
 .fac {align-items:center;}
 .fas {align-items:start;}
@@ -134,6 +122,8 @@ time effect
 .f__a {flex:1 1 auto;}
 .f10 {flex:1 1 100%;}
 .f5 {flex:1 1 50%}
+.f4 {flex:1 1 40%}
+.f25 {flex:1 1 25%}
 .f75 {flex:1 1 75%;}
 .f30 {flex:1 1 30%;}
 .f500 {flex:1 1 500px;}
@@ -143,7 +133,7 @@ time effect
 .f150 {flex:1 1 150px;}
 .f100 {flex:1 1 100px;}
 
-
+.border {border-radius:20px}
 
 .T_t::first-letter {text-transform: uppercase;}
 .t {text-transform: lowercase;}
@@ -153,15 +143,22 @@ time effect
 .t_ {text-align:start;}
 .Tt {text-transform: capitalize;}
 .t_nw {white-space: nowrap;}
+.t_t {text-align: justify;}
 
 
 .w {width:100%;}
 .w100 {min-width:100%;}
+.w200M {max-width:200px;}
+.w150M {max-width:150px;}
 .w50 {width:50%;}
 .w70 {width:70%;}
 .h {height:100%;}
 .w340M {max-width:340px;}
+.w500M {max-width:500px;}
+.w650M {max-width:650px;}
 .w850M {max-width:850px;}
+.w900M {max-width:900px;}
+.w800M {max-width:800px;}
 
 .matte {
     -webkit-backdrop-filter: blur(5px);
@@ -171,6 +168,7 @@ time effect
 }
 
 ._b_1b {border-bottom:1px solid var(--c1);}
+._b_1b_c8 {border-bottom:1px solid var(--c8);}
 
 .pad5 {padding:5px}
 .pad10 {padding:10px}
@@ -181,6 +179,8 @@ time effect
 
 .pad20t {padding-top:20px;}
 .pad20b {padding-bottom:20px;}
+.pad20l {padding-left:20px;}
+.pad20r {padding-right:20px;}
 
 .pad30t {padding-top:30px;}
 .pad30b {padding-bottom:30px;}
@@ -190,8 +190,9 @@ time effect
 .pad50t {padding-top:50px;}
 .pad50b {padding-bottom:50px;}
 
-.pad100t {padding-top:50px;}
-.pad100b {padding-bottom:50px;}
+.pad100t {padding-top:100px;}
+.pad100b {padding-bottom:100px;}
+.pad200t {padding-top:200px;}
 
 .mar5 {margin:5px;}
 .mar10 {margin:10px;}
@@ -214,6 +215,8 @@ time effect
 .bottom {bottom:0px;bottom:0%;}
 .left {left:0px;left:0%;}
 
+.deg90 {transform:rotate(90deg);}
+
 .center {top: 50%;transform: translateY(-50%);}
 .middle {left: 50%;transform: translateX(-50%);}
 .c {margin:0 auto;}
@@ -227,3 +230,7 @@ time effect
 
 .br700 {display:none;}
 
+/*
+* {
+    border:1px solid green;
+}

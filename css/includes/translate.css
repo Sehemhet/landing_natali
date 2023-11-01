@@ -16,6 +16,7 @@ translate anim
 .anim_scale {
     transform:scale(.1);
 }
+
 .anim_active {
     transform: translate(0%,0%);
     opacity: 1;

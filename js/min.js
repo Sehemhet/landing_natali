@@ -34,9 +34,9 @@ document.querySelectorAll('.burger_nav a').forEach(item => {
 // добавление тени к навигации при скроле
 window.addEventListener('scroll', function() {
   if (pageYOffset > 255) {
-    document.querySelector('header').classList.add('activate_under_shadow')
+    document.querySelector('header').classList.add('header_back_active')
   } else {
-    document.querySelector('header').classList.remove('activate_under_shadow')
+    document.querySelector('header').classList.remove('header_back_active')
   }
 });
 
@@ -59,3 +59,34 @@ for (let el of animItems) {
 };
 
 
+
+// Функция активации анимации
+function activateAnimation(entry) {
+    entry.forEach(change => {
+        if (change.isIntersecting) {
+            // Если элемент в зоне видимости, добавляем класс анимации
+            if (change.target.classList.contains('anim_up_05s_target')) {
+                change.target.classList.add('anim_up_05s');
+            } else if (change.target.classList.contains('anim_up_10s_target')) {
+                change.target.classList.add('anim_up_10s');
+            } else if (change.target.classList.contains('anim_up_15s_target')) {
+                change.target.classList.add('anim_up_15s');
+            }
+        } else {
+            // Если элемент вышел из зоны видимости, удаляем класс анимации
+            change.target.classList.remove('anim_up_05s', 'anim_up_10s', 'anim_up_15s');
+        }
+    });
+};
+
+// Настройки для IntersectionObserver
+let animationOptions = { threshold: [0.01] };
+
+// Создаем экземпляр IntersectionObserver
+let animationObserver = new IntersectionObserver(activateAnimation, animationOptions);
+
+// Отслеживаем элементы с нужными классами
+let animationTargets = document.querySelectorAll('.anim_up_05s_target, .anim_up_10s_target, .anim_up_15s_target');
+animationTargets.forEach(target => {
+    animationObserver.observe(target);
+});
