@@ -141,6 +141,11 @@ header nav ul li a:active {
     #_1 .in ._1 .w340M {
         max-width:100%;
     }
+    #_1 .right {
+        margin-right:50%;
+        transform:translateX(50%);
+
+    }
     #_3 .in .f ._2 ._1 ._2 ._f {
         justify-content:flex-start;
     }
@@ -161,11 +166,22 @@ header nav ul li a:active {
     #_4 .in ._1 ._2 {
         flex-wrap:wrap;
     }
+    #_4 .in ._1 ._2 ._2 .btn_wrap {
+        justify-content:center;
+        width:100%;
+    }
+    #_5 .in ._16_9 ._6 {
+        justify-content:center;
+    }
 }
 @media (max-width:480px) {
     .in {
         padding-left:10px;
         padding-right:10px;
+    }
+    #_2 .f300 .btn_wrap,
+    #_6 .f300 .btn_wrap {
+        justify-content:center;
     }
     #_3 .in .f ._2 ._1 {
         flex-wrap:wrap;
