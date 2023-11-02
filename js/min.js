@@ -80,7 +80,10 @@ function activateAnimation(entry) {
 };
 
 // Настройки для IntersectionObserver
-let animationOptions = { threshold: [0.01] };
+let animationOptions = {
+    rootMargin: '200px 0px 200px 0px', // активируем анимацию раньше, когда элемент появляется в пределах 100px от зоны видимости
+    threshold: [0.01]
+};
 
 // Создаем экземпляр IntersectionObserver
 let animationObserver = new IntersectionObserver(activateAnimation, animationOptions);
@@ -90,6 +93,7 @@ let animationTargets = document.querySelectorAll('.anim_up_05s_target, .anim_up_
 animationTargets.forEach(target => {
     animationObserver.observe(target);
 });
+
 
 
 
@@ -111,6 +115,25 @@ function pagination1(step) {
   const offset = reviewWidth * currentIndex;
   sliderLine.style.transform = `translateX(${-offset}px)`;
 }
+
+
+
+//document.addEventListener('scroll', function() {
+//  var goldElement = document.querySelector('.gold');
+//  var position = goldElement.getBoundingClientRect(); // Получить позицию элемента относительно окна браузера
+//
+//  // Проверяем, находится ли элемент на расстоянии одного окна просмотра от нижней части видимой области
+//  if (position.top < window.innerHeight * 1.5 && position.bottom >= 0) {
+//    // Если элемент близок к области видимости, изменяем стиль translateY, не затрагивая translateX
+//    goldElement.style.transform = 'translateX(-50%) translateY(0)';
+//    goldElement.style.opacity = '1';
+//  }
+//});
+
+
+
+
+
 
 // Передаем параметр -1 для движения влево и 1 для движения вправо
 

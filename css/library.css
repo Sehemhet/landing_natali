@@ -16,18 +16,10 @@ library
     --t2: "t2";
     --t3: "t3";
 }
-
-.gold {
-    background: url('../img/3.webp') top no-repeat;
-    background-size: contain;
-    max-width:600px;
-    width:80%;
-    position:absolute;
-    z-index:-1;
+.anim_up_05s_target {
     top:0;
     left:50%;
-    transform:translateX(-50%);
-    height:100%;
+    transform:translateX(-50%) translateY(100%);
 }
 .gold2 {
     background: url('../img/4.webp') top no-repeat;
@@ -48,14 +40,10 @@ library
 .fs18 {font-size:18px;}
 .fs14 {font-size:14px;}
 .fs10 {font-size:10px;}
-.fs24 {font-size:24px;}
 .fs20 {font-size:20px;}
-.fs32 {font-size: 32px;}
 .fs36 {font-size: 36px;letter-spacing: 0px;}
-.fs52 {font-size:52px;letter-spacing: 0px;}
 
 .fs44 {font-size:44px;letter-spacing: -2px;}
-.fs80 {font-size:80px;}
 .fs170 {font-size: 46px;letter-spacing: -2px;}
 @media (min-width: 360px) and (max-width: 1920px) {
     .fs170 {
@@ -66,9 +54,6 @@ library
         font-size: 44px;
         letter-spacing: calc(-2px + (-3px) * ((100vw - 360px) / 1560));
     }
-    .fs32 {
-        font-size: calc(18px + 14 * ((100vw - 360px) / 1560));
-    }
 }
 @media (min-width: 1921px) {
     .fs170 {
@@ -78,9 +63,6 @@ library
     .fs44 {
         font-size: 44px;
         letter-spacing: -5px;
-    }
-    .fs32 {
-        font-size: 32px;
     }
 }
 
@@ -97,12 +79,8 @@ library
 .c9 {color:var(--c9);}
 
 .b1 {background:var(--c1);}
-.b2 {background:var(--c2);}
-.b3 {background:var(--c3);}
 .b4 {background:var(--c4);}
-.b5 {background:var(--c5);}
 .b6 {background:var(--c6);}
-.b7 {background:var(--c7);}
 .b8 {background:var(--c8);}
 .b9 {background:var(--c9);}
 
@@ -125,22 +103,17 @@ time effect
 
 .f_ {justify-content:flex-start;}
 ._f {justify-content:flex-end;}
-._f_f_ {justify-content:space-around;}
 .f_f {justify-content:space-between;}
 ._f_ {justify-content:center;}
 
 .fac {align-items:center;}
-.fas {align-items:start;}
-.fae {align-items:end;}
 
 .gap5 {gap:5px;}
 .gap10 {gap:10px;}
 .gap20 {gap:20px;}
 .gap30 {gap:30px;}
-.gap40 {gap:40px;}
 .gap50 {gap:50px;}
 .gap100 {gap:100px;}
-.gap150 {gap:150px;}
 
 .f__a {flex:1 1 auto;}
 .f10 {flex:1 1 100%;}
@@ -149,11 +122,8 @@ time effect
 .f25 {flex:1 1 25%}
 .f75 {flex:1 1 75%;}
 .f3 {flex:1 1 30%;}
-.f500 {flex:1 1 500px;}
 .f345 {flex:1 1 345px;}
 .f300 {flex:1 1 300px;}
-.f200 {flex:1 1 200px;}
-.f150 {flex:1 1 150px;}
 .f100 {flex:1 1 100px;}
 
 .border {border-radius:20px}
@@ -171,19 +141,14 @@ time effect
 
 .w {width:100%;}
 .w100 {min-width:100%;}
-.w200M {max-width:200px;}
-.w150M {max-width:150px;}
 .w300m {min-width:300px;}
 .w50 {width:50%;}
-.w70 {width:70%;}
 .h {height:100%;}
 .w340M {max-width:340px;}
-.w400M {max-width:400px;}
 .w500M {max-width:500px;}
 .w650M {max-width:650px;}
 .w850M {max-width:850px;}
 .w900M {max-width:900px;}
-.w800M {max-width:800px;}
 
 .matte {
     -webkit-backdrop-filter: blur(5px);
@@ -196,7 +161,6 @@ time effect
 ._b_1b_c8 {border-bottom:1px solid var(--c8);}
 
 .pad5 {padding:5px}
-.pad10 {padding:10px}
 .pad20 {padding:20px}
 
 .pad10b {padding-bottom:10px;}
@@ -216,12 +180,7 @@ time effect
 .pad50b {padding-bottom:50px;}
 
 .pad100t {padding-top:100px;}
-.pad100b {padding-bottom:100px;}
-.pad200t {padding-top:200px;}
 
-.mar5 {margin:5px;}
-.mar10 {margin:10px;}
-.mar20 {margin:20px;}
 
 .abs {position:absolute;}
 .rel {position:relative;}
@@ -248,7 +207,6 @@ time effect
 
 .contain {object-fit:contain;}
 .cover {object-fit:cover;}
-.fill {object-fit:fill;}
 
 .hide {overflow:hidden;}
 .scroll {overflow:auto;height:100%;width:100%;}
