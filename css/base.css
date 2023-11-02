@@ -34,10 +34,12 @@ header nav ul li a:active {
     padding-right:100px;
     margin:0 auto;
 }
+
 .h1080M {max-height:1080px;}
 .h100vh {height:100vh;}
 ._16_9 {aspect-ratio: 16 / 9;}
 .Y1024 {display:none;}
+.Y480 {display:none;}
 @media (orientation: portrait) {
     .h100vh, .h1080M, ._16_9 {
         max-height:none !important;
@@ -178,6 +180,18 @@ header nav ul li a:active {
     .in {
         padding-left:10px;
         padding-right:10px;
+    }
+    .N480 {
+        display:none;
+    }
+    .Y480 {
+        display:flex;
+    }
+    #_1 .in .f .gap50 {
+        gap:20px;
+    }
+    #_1 .in .f ._2 .pad50t {
+        padding-top:0px;
     }
     #_2 .f300 .btn_wrap,
     #_6 .f300 .btn_wrap {
