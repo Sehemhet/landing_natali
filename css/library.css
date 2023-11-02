@@ -21,10 +21,21 @@ library
     background: url('../img/3.webp') top no-repeat;
     background-size: contain;
     max-width:600px;
-    width:100%;
+    width:80%;
     position:absolute;
     z-index:-1;
     top:0;
+    left:50%;
+    transform:translateX(-50%);
+    height:100%;
+}
+.gold2 {
+    background: url('../img/4.webp') top no-repeat;
+    background-size: contain;
+    width:90%;
+    position:absolute;
+    z-index:-1;
+    top:30%;
     left:50%;
     transform:translateX(-50%);
     height:100%;

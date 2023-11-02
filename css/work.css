@@ -44,7 +44,7 @@
     display:flex;
 }
 
-
+/*
 .wrap_gold {
     max-width:1000px;
     width:100%;
@@ -58,6 +58,7 @@
 .wrap_gold .rel {
     position:relative;
 }
+*/
 
 @keyframes slideUp {
     from {
