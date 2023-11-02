@@ -38,9 +38,6 @@ header nav ul li a:active {
 .h100vh {height:100vh;}
 ._16_9 {aspect-ratio: 16 / 9;}
 .Y1024 {display:none;}
-
-
-
 @media (orientation: portrait) {
     .h100vh, .h1080M, ._16_9 {
         max-height:none !important;
@@ -198,7 +195,6 @@ header nav ul li a:active {
         gap:10px;
     }
 }
-
 @media (min-width: 1921px) {
     .h100vh {
         height: auto;

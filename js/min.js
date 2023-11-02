@@ -90,3 +90,11 @@ let animationTargets = document.querySelectorAll('.anim_up_05s_target, .anim_up_
 animationTargets.forEach(target => {
     animationObserver.observe(target);
 });
+
+
+window.addEventListener('resize', function() {
+  // Можно вызвать функцию, которая обновит стили или просто перезагрузит страницу
+  document.body.style.display = 'none';
+  document.body.offsetHeight; // принудительный рефлоу
+  document.body.style.display = '';
+});
