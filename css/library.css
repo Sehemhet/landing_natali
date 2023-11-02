@@ -7,9 +7,10 @@ library
     --c3:rgba(244, 237, 228, 1);        /* color 3      beige */
     --c4:rgba(141, 0, 0, 1);            /* color 4      red */
     --c5:rgba(0, 0, 0, 0);              /* color 5      opacity */
-    --c6:rgba(244, 237, 228, 0.8);      /* color 6      beige opacity */
+    --c6:rgba(244, 237, 228, 0.5);      /* color 6      beige opacity */
     --c7:rgba(255, 255, 255, 0.8);      /* color 2      white opacity*/
     --c8:rgba(255, 255, 255, 1);        /* color 2      white */
+    --c9:rgba(248, 245, 240, 0.5));        /* color 2      white */
 
     --t1: "t1";
     --t2: "t2";
@@ -73,6 +74,7 @@ library
 .c6 {color:var(--c6);}
 .c7 {color:var(--c7);}
 .c8 {color:var(--c8);}
+.c9 {color:var(--c9);}
 
 .b1 {background:var(--c1);}
 .b2 {background:var(--c2);}
@@ -82,6 +84,7 @@ library
 .b6 {background:var(--c6);}
 .b7 {background:var(--c7);}
 .b8 {background:var(--c8);}
+.b9 {background:var(--c9);}
 
 /*
 time effect
@@ -125,7 +128,7 @@ time effect
 .f4 {flex:1 1 40%}
 .f25 {flex:1 1 25%}
 .f75 {flex:1 1 75%;}
-.f30 {flex:1 1 30%;}
+.f3 {flex:1 1 30%;}
 .f500 {flex:1 1 500px;}
 .f345 {flex:1 1 345px;}
 .f300 {flex:1 1 300px;}
@@ -150,10 +153,12 @@ time effect
 .w100 {min-width:100%;}
 .w200M {max-width:200px;}
 .w150M {max-width:150px;}
+.w300m {min-width:300px;}
 .w50 {width:50%;}
 .w70 {width:70%;}
 .h {height:100%;}
 .w340M {max-width:340px;}
+.w400M {max-width:400px;}
 .w500M {max-width:500px;}
 .w650M {max-width:650px;}
 .w850M {max-width:850px;}

@@ -57,6 +57,10 @@ header nav ul li a:active {
     #_1 {
         padding-top:50px;
     }
+    .wpcf7 ._1,
+    .wpcf7 ._3 {
+        flex-wrap:wrap;
+    }
 }
 @media (max-width:1024px) {
     .in {

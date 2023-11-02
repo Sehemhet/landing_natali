@@ -13,8 +13,10 @@ btn css
     position:relative;
     overflow:hidden;
     z-index:2;
+    height:30px;
 }
-.btn a {
+.btn a,
+.btn button {
     display:flex;
     margin:5px;
     padding-left:5px;
@@ -40,6 +42,7 @@ btn css
 .btn:hover:before {
     transform:translateX(0%);
 }
-.btn:hover a {
+.btn:hover a,
+.btn:hover button {
     color:var(--c2);
 }
