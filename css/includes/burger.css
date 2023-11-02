@@ -16,7 +16,7 @@
 .burger__line_3 {
     width:100%;
     height:2px;
-    background:var(--c1);
+    background:var(--c4);
     position:absolute;
 }
 .burger__line_1 {
@@ -32,25 +32,13 @@
     bottom:0;
     left:0;
 }
-.burger:hover .burger__line_1 {
-    transform:rotate(-45deg);
-    margin-top:2px;
-    width:50%;
-    background:var(--c4);
+
+
+.burger:hover {
+    transform:scale(1.1);
+    transition: all 0.5s ease;
 }
-.burger:hover .burger__line_2 {
-    width:150%;
-}
-.burger:active .burger__line_2 {
-    width:150%;
-    transform:translateX(500%);
-}
-.burger:hover .burger__line_3 {
-    transform:rotate(45deg);
-    margin-bottom:2px;
-    width:50%;
-    background:var(--c4);
-}
+
 .burger_cross {
     display:flex;
     justify-content:space-between;
@@ -63,24 +51,18 @@
     background:var(--c4);
 }
 .burger_cross .burger__line_2 {
-    transform:translateX(500%);
+    display:none;
 }
 .burger_cross .burger__line_3 {
     transform: rotate(-45deg) translateY(50%);
     transform-origin: bottom left;
     background:var(--c4);
 }
-.burger_cross:hover .burger__line_1 {
-    transform-origin: none;
-    margin-top:8px;
+.burger_cross:hover  {
+    transform:scale(1.1);
+    transition: all 0.5s ease;
 }
-.burger_cross:hover .burger__line_2 {
-    transform:translateX(0%);
-}
-.burger_cross:hover .burger__line_3 {
-    transform-origin: none;
-    margin-bottom:8px;
-}
+
 
 .burger_nav {
     display:none;
