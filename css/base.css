@@ -178,8 +178,8 @@ header nav ul li a:active {
 }
 @media (max-width:480px) {
     .in {
-        padding-left:10px;
-        padding-right:10px;
+        padding-left:20px;
+        padding-right:20px;
     }
     .N480 {
         display:none;
@@ -188,10 +188,19 @@ header nav ul li a:active {
         display:flex;
     }
     #_1 .in .f .gap50 {
-        gap:20px;
+        gap:10px;
+    }
+    #_1 .in .f ._2 img {
+        width:80%;
     }
     #_1 .in .f ._2 .pad50t {
         padding-top:0px;
+    }
+    #_1 .in .f ._1 ._3 .fs18 {
+        font-size:14px;
+    }
+    #_1 .fs170 {
+        font-size:60px;
     }
     #_2 .f300 .btn_wrap,
     #_6 .f300 .btn_wrap {

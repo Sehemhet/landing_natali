@@ -6,6 +6,10 @@
 .review_slider {
     height:420px;
 }
+.review_slider .f {
+  transition: transform 0.3s ease-in-out; /* 0.3s - длительность анимации */
+}
+
 .review {
     width:280px;
     height:400px;

@@ -92,6 +92,31 @@ animationTargets.forEach(target => {
 });
 
 
+
+let currentIndex = 0; // Глобальный индекс текущего обзора
+function pagination1(step) {
+  const sliderLine = document.querySelector('.review_slider .f'); // Предполагается, что это контейнер, который двигается
+  const reviews = document.querySelectorAll('.review_slider .review');
+  const reviewWidth = reviews[0].offsetWidth; // Предполагается, что все обзоры одинаковой ширины
+  const reviewCount = reviews.length;
+
+  currentIndex += step;
+  // Проверяем границы
+  if (currentIndex < 0) {
+    currentIndex = 0;
+  } else if (currentIndex >= reviewCount) {
+    currentIndex = reviewCount - 1;
+  }
+
+  const offset = reviewWidth * currentIndex;
+  sliderLine.style.transform = `translateX(${-offset}px)`;
+}
+
+// Передаем параметр -1 для движения влево и 1 для движения вправо
+
+
+
+
 //window.addEventListener('resize', function() {
 //  // Можно вызвать функцию, которая обновит стили или просто перезагрузит страницу
 //  document.body.style.display = 'none';
