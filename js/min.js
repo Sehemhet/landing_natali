@@ -92,9 +92,9 @@ animationTargets.forEach(target => {
 });
 
 
-window.addEventListener('resize', function() {
-  // Можно вызвать функцию, которая обновит стили или просто перезагрузит страницу
-  document.body.style.display = 'none';
-  document.body.offsetHeight; // принудительный рефлоу
-  document.body.style.display = '';
-});
+//window.addEventListener('resize', function() {
+//  // Можно вызвать функцию, которая обновит стили или просто перезагрузит страницу
+//  document.body.style.display = 'none';
+//  document.body.offsetHeight; // принудительный рефлоу
+//  document.body.style.display = '';
+//});
