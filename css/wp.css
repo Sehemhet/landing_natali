@@ -30,12 +30,16 @@ adaptation wp style
 
 
 .wpcf7 ._4 {
-    margin-top:120px;
     display:flex;
     gap:20px;
 }
 .wpcf7 ._4 span {
     flex:1 1 auto;
+}
+input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
 }
 
 .wpcf7 input::placeholder {

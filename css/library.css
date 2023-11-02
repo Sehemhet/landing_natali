@@ -7,10 +7,10 @@ library
     --c3:rgba(244, 237, 228, 1);        /* color 3      beige */
     --c4:rgba(141, 0, 0, 1);            /* color 4      red */
     --c5:rgba(0, 0, 0, 0);              /* color 5      opacity */
-    --c6:rgba(244, 237, 228, 0.5);      /* color 6      beige opacity */
+    --c6:rgba(244, 237, 228, 0.8);      /* color 6      beige opacity */
     --c7:rgba(255, 255, 255, 0.8);      /* color 2      white opacity*/
     --c8:rgba(255, 255, 255, 1);        /* color 2      white */
-    --c9:rgba(248, 245, 240, 0.5));        /* color 2      white */
+    --c9:rgba(248, 245, 240, 0.8));        /* color 2      white */
 
     --t1: "t1";
     --t2: "t2";
@@ -42,13 +42,18 @@ library
 .fs32 {font-size: 32px;}
 .fs36 {font-size: 36px;letter-spacing: 0px;}
 .fs52 {font-size:52px;letter-spacing: 0px;}
-.fs44 {font-size:44px;letter-spacing: 0px;}
+
+.fs44 {font-size:44px;letter-spacing: -2px;}
 .fs80 {font-size:80px;}
 .fs170 {font-size: 46px;letter-spacing: -2px;}
 @media (min-width: 360px) and (max-width: 1920px) {
     .fs170 {
         font-size: calc(46px + 124 * ((100vw - 360px) / 1560));
         letter-spacing: calc(-2px - 3 * ((100vw - 360px) / 1560));
+    }
+    .fs44 {
+        font-size: 44px;
+        letter-spacing: calc(-2px + (-3px) * ((100vw - 360px) / 1560));
     }
     .fs32 {
         font-size: calc(18px + 14 * ((100vw - 360px) / 1560));
@@ -57,6 +62,10 @@ library
 @media (min-width: 1921px) {
     .fs170 {
         font-size: 170px;
+        letter-spacing: -5px;
+    }
+    .fs44 {
+        font-size: 44px;
         letter-spacing: -5px;
     }
     .fs32 {
