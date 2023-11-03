@@ -23,3 +23,10 @@ translate anim
     transform:scale(1);
     transition: all 1s;
 }
+
+:target:before {
+    content:'';
+    display:block;
+    width:100%;
+    height:50px;
+}

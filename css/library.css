@@ -21,7 +21,10 @@ library
     left:50%;
     transform:translateX(-50%) translateY(100%);
 }
-.gold2 {
+#_1 {
+    background:url("../img/5.webp") center center, center center;
+}
+.img2 {
     background: url('../img/4.webp') top no-repeat;
     background-size: contain;
     width:90%;
@@ -32,6 +35,7 @@ library
     transform:translateX(-50%);
     height:100%;
 }
+
 
 .t1 {font-family:var(--t1); line-height:0.8;letter-spacing: -5px;}
 .t2 {font-family:var(--t2);}
@@ -68,15 +72,10 @@ library
 
 
 .c1 {color:var(--c1);}
-.c1 {color:var(--c1);}
-.c2 {color:var(--c2);}
 .c3 {color:var(--c3);}
 .c4 {color:var(--c4);}
 .c5 {color:var(--c5);}
-.c6 {color:var(--c6);}
-.c7 {color:var(--c7);}
 .c8 {color:var(--c8);}
-.c9 {color:var(--c9);}
 
 .b1 {background:var(--c1);}
 .b4 {background:var(--c4);}
@@ -113,18 +112,24 @@ time effect
 .gap20 {gap:20px;}
 .gap30 {gap:30px;}
 .gap50 {gap:50px;}
+.gap60 {gap:80px;}
 .gap100 {gap:100px;}
 
-.f__a {flex:1 1 auto;}
 .f10 {flex:1 1 100%;}
 .f5 {flex:1 1 50%}
 .f4 {flex:1 1 40%}
-.f25 {flex:1 1 25%}
-.f75 {flex:1 1 75%;}
-.f3 {flex:1 1 30%;}
 .f345 {flex:1 1 345px;}
 .f300 {flex:1 1 300px;}
 .f100 {flex:1 1 100px;}
+
+.f240_01 {flex:0 1 240px;} /* for btn */
+.f200_11 {flex:1 1 200px;}
+.f440_11 {flex:1 1 440px;}
+.f10_11 {flex:1 1 10%;}
+.f80_11 {flex:1 1 80%;}
+.f300_00 {flex:0 0 300px;}
+.f300_11 {flex:1 1 300px;}
+.f200_11 {flex:1 1 200px;}
 
 .border {border-radius:20px}
 
@@ -140,9 +145,6 @@ time effect
 
 
 .w {width:100%;}
-.w100 {min-width:100%;}
-.w300m {min-width:300px;}
-.w50 {width:50%;}
 .h {height:100%;}
 .w340M {max-width:340px;}
 .w500M {max-width:500px;}

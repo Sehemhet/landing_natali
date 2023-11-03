@@ -59,7 +59,6 @@ for (let el of animItems) {
 };
 
 
-
 // Функция активации анимации
 function activateAnimation(entry) {
     entry.forEach(change => {
@@ -94,55 +93,58 @@ animationTargets.forEach(target => {
     animationObserver.observe(target);
 });
 
-
-
-
 let currentIndex = 0; // Глобальный индекс текущего обзора
 function pagination1(step) {
   const sliderLine = document.querySelector('.review_slider .f'); // Предполагается, что это контейнер, который двигается
   const reviews = document.querySelectorAll('.review_slider .review');
   const reviewWidth = reviews[0].offsetWidth; // Предполагается, что все обзоры одинаковой ширины
+    const margin = 10; // Суммарный размер маржинов для одного обзора (5px с каждой стороны)
+
   const reviewCount = reviews.length;
 
   currentIndex += step;
-  // Проверяем границы
   if (currentIndex < 0) {
     currentIndex = 0;
   } else if (currentIndex >= reviewCount) {
     currentIndex = reviewCount - 1;
   }
 
-  const offset = reviewWidth * currentIndex;
+  const offset = (reviewWidth + margin) * currentIndex;
   sliderLine.style.transform = `translateX(${-offset}px)`;
 }
 
 
+function modul1() {
+  var modul1Detail = document.querySelector('#modul1 > ._3');
 
-//document.addEventListener('scroll', function() {
-//  var goldElement = document.querySelector('.gold');
-//  var position = goldElement.getBoundingClientRect(); // Получить позицию элемента относительно окна браузера
-//
-//  // Проверяем, находится ли элемент на расстоянии одного окна просмотра от нижней части видимой области
-//  if (position.top < window.innerHeight * 1.5 && position.bottom >= 0) {
-//    // Если элемент близок к области видимости, изменяем стиль translateY, не затрагивая translateX
-//    goldElement.style.transform = 'translateX(-50%) translateY(0)';
-//    goldElement.style.opacity = '1';
-//  }
-//});
+  if (modul1Detail.style.display === 'flex') {
+    modul1Detail.style.display = 'none';
+  } else {
+    modul1Detail.style.display = 'flex';
+  }
+}
+
+function modul2() {
+  var modul1Detail = document.querySelector('#modul2 > ._3');
+
+  if (modul1Detail.style.display === 'flex') {
+    modul1Detail.style.display = 'none';
+  } else {
+    modul1Detail.style.display = 'flex';
+  }
+}
+
+function modul3() {
+  var modul1Detail = document.querySelector('#modul3 > ._3');
+
+  if (modul1Detail.style.display === 'flex') {
+    modul1Detail.style.display = 'none';
+  } else {
+    modul1Detail.style.display = 'flex';
+  }
+}
 
 
 
 
 
-
-// Передаем параметр -1 для движения влево и 1 для движения вправо
-
-
-
-
-//window.addEventListener('resize', function() {
-//  // Можно вызвать функцию, которая обновит стили или просто перезагрузит страницу
-//  document.body.style.display = 'none';
-//  document.body.offsetHeight; // принудительный рефлоу
-//  document.body.style.display = '';
-//});
