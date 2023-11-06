@@ -1,0 +1,35 @@
+.ray {
+    position:relative;
+}
+
+@keyframes slideIn {
+    from {
+        left: -200%;
+        background: var(--c5);
+    }
+    to {
+        left: 0%;
+        background: var(--c4);
+    }
+}
+.ray:after {
+    content: '';
+    display: flex;
+    width: 90%;
+    height: 10%;
+    top: 40%;
+    left: -100%;
+    transform: translateY(-50%);
+    background: var(--c5);
+    position: absolute;
+    animation: slideIn .7s ease forwards;
+}
+.ray.second:after {
+    animation-delay: .5s;
+}
+.ray:first-child:after {
+    animation: slideIn .7s ease forwards;
+}
+.ray.second:after {
+    animation: slideIn .7s ease forwards .5s;
+}

@@ -1,6 +1,4 @@
-/*
-library
-*/
+
 :root {
     --c1:rgba(26, 26, 26, 1);           /* color 1      black */
     --c2:rgba(248, 245, 240, 1);        /* color 2      white */
@@ -107,12 +105,10 @@ time effect
 
 .fac {align-items:center;}
 
-.gap5 {gap:5px;}
 .gap10 {gap:10px;}
 .gap20 {gap:20px;}
 .gap30 {gap:30px;}
 .gap50 {gap:50px;}
-.gap60 {gap:80px;}
 .gap100 {gap:100px;}
 
 .f10 {flex:1 1 100%;}
@@ -122,14 +118,15 @@ time effect
 .f300 {flex:1 1 300px;}
 .f100 {flex:1 1 100px;}
 
-.f240_01 {flex:0 1 240px;} /* for btn */
+.f240_01 {flex:1 1 240px;} /* for btn */
 .f200_11 {flex:1 1 200px;}
 .f440_11 {flex:1 1 440px;}
-.f10_11 {flex:1 1 10%;}
+.f100_11 {flex:1 1 100px;}
 .f80_11 {flex:1 1 80%;}
-.f300_00 {flex:0 0 300px;}
+.f300_00 {flex:0 1 300px;}
 .f300_11 {flex:1 1 300px;}
 .f200_11 {flex:1 1 200px;}
+.f600_11 {flex:0 1 600px;}
 
 .border {border-radius:20px}
 
@@ -149,8 +146,13 @@ time effect
 .w340M {max-width:340px;}
 .w500M {max-width:500px;}
 .w650M {max-width:650px;}
+.w600M {max-width:600px;}
 .w850M {max-width:850px;}
 .w900M {max-width:900px;}
+.w414M {max-width:414px;}
+.w50{width:50%;}
+.w320m {min-width:320px;}
+.w240M {max-width:240px;}
 
 .matte {
     -webkit-backdrop-filter: blur(5px);
@@ -202,6 +204,8 @@ time effect
 .left {left:0px;left:0%;}
 
 .deg90 {transform:rotate(90deg);}
+.deg45 {transform:rotate(45deg);}
+.deg315 {transform:rotate(225deg);}
 
 .center {top: 50%;transform: translateY(-50%);}
 .middle {left: 50%;transform: translateX(-50%);}
@@ -214,3 +218,5 @@ time effect
 .scroll {overflow:auto;height:100%;width:100%;}
 
 .br700 {display:none;}
+
+.box {display:none;}

@@ -34,11 +34,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-weight: normal;
-  font-size: 100%; /* Возвращает размер шрифта к 100%, что равносильно 16px в большинстве браузеров */
+  font-size: 100%;
   line-height: normal;
-  color: inherit; /* Наследует цвет текста от родительского элемента */
-  text-transform: none; /* Отменяет любое преобразование текста, такое как uppercase */
-  /* И другие стили, которые вы хотите сбросить или переопределить */
+  color: inherit;
+  text-transform: none;
 }
 
 button {

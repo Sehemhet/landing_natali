@@ -6,45 +6,17 @@
 .review_slider {
     height:420px;
 }
-.review_slider .f {
-  transition: transform 0.3s ease-in-out; /* 0.3s - длительность анимации */
+.review_train {
+  transition: transform 0.3s ease-in-out;
 }
-
 .review {
-    width:280px;
     height:400px;
-    flex: 0 0 280px;
+    flex: 0 0 240px;
     margin-left:5px;
     margin-right:5px;
 }
 .review img {
     border-radius:10px;
-}
-
-.pagination {
-    height:100px;
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    position:relative;
-}
-.pagination button {
-    height:50px;
-    width:50px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-weight:300;
-}
-.pag_l {
-    position:absolute;
-    left:0;
-    top:0;
-}
-.pag_r {
-    position:absolute;
-    right:0;
-    bottom:0;
 }
 
 
@@ -57,15 +29,51 @@
     }
 }
 
-
-#modul1 > ._3 {
-  display: none;
+.pag {
+    display:flex;
+    height:16px;
+    width:16px;
+    border-bottom:4px solid var(--c1);
+    border-left:4px solid var(--c1);
+    border-radius:5px;
+    position:relative;
+    padding:5px;
 }
-#modul2 > ._3 {
-  display: none;
+.pag:before {
+    content:'';
+    display:flex;
+    width:50%;
+    height:4px;
+    background:var(--c4);
+    position:absolute;
+    bottom:0;
+    left:0;
 }
-#modul3 > ._3 {
-  display: none;
+.pag:after {
+    content:'';
+    display:flex;
+    width:4px;
+    height:50%;
+    background:var(--c4);
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.pag:hover:before {
+    width:100%;
+    transition: all .2s;
+}
+.pag:hover:after {
+    height:100%;
+    transition: all .2s;
+}
+.pag:active {
+    border-bottom:4px solid var(--c4);
+    border-left:4px solid var(--c4);
+    transition: all .2s;
+}
+.link {
+    height:40px;
 }
 
 

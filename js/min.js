@@ -17,7 +17,6 @@ function burgerMenu() {
     }
 }
 
-
 // Обработчик изменения размера окна
 window.addEventListener('resize', function() {
     var header = document.querySelector('header');
@@ -33,7 +32,7 @@ document.querySelectorAll('.burger_nav a').forEach(item => {
 
 // добавление тени к навигации при скроле
 window.addEventListener('scroll', function() {
-  if (pageYOffset > 255) {
+  if (pageYOffset > 55) {
     document.querySelector('header').classList.add('header_back_active')
   } else {
     document.querySelector('header').classList.remove('header_back_active')
@@ -114,33 +113,19 @@ function pagination1(step) {
 }
 
 
-function modul1() {
-  var modul1Detail = document.querySelector('#modul1 > ._3');
+function toggleModuleDetail(moduleId) {
+  var moduleElement = document.getElementById(moduleId);
+  var detailElement = moduleElement.querySelector('.box');
+  var linkElement = moduleElement.querySelector('.link');
 
-  if (modul1Detail.style.display === 'flex') {
-    modul1Detail.style.display = 'none';
+  if (detailElement.style.display === 'flex') {
+    detailElement.style.display = 'none';
+    linkElement.classList.remove('fixed-link');
   } else {
-    modul1Detail.style.display = 'flex';
-  }
-}
-
-function modul2() {
-  var modul1Detail = document.querySelector('#modul2 > ._3');
-
-  if (modul1Detail.style.display === 'flex') {
-    modul1Detail.style.display = 'none';
-  } else {
-    modul1Detail.style.display = 'flex';
-  }
-}
-
-function modul3() {
-  var modul1Detail = document.querySelector('#modul3 > ._3');
-
-  if (modul1Detail.style.display === 'flex') {
-    modul1Detail.style.display = 'none';
-  } else {
-    modul1Detail.style.display = 'flex';
+    detailElement.style.display = 'flex';
+    linkElement.classList.add('fixed-link');
+    // Если вам нужно возвращать пользователя к началу элемента .link
+    window.scrollTo(0, moduleElement.offsetTop - 50);
   }
 }
 
