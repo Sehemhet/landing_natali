@@ -1,4 +1,4 @@
-.h100vh {height:100vh;}
+.h100vh {height: calc(100vh - 42px);}
 .Y1024 {display:none;}
 .Y480 {display:none;}
 
