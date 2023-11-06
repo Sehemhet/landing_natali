@@ -1,10 +1,9 @@
-.h1080M {max-height:1080px;}
 .h100vh {height:100vh;}
 .Y1024 {display:none;}
 .Y480 {display:none;}
 
 @media (orientation: portrait) {
-    .h100vh, .h1080M, ._16_9 {
+    .h100vh, ._16_9 {
         max-height:none !important;
         height: auto !important;
         aspect-ratio: auto;
@@ -19,7 +18,7 @@
     }
 }
 @media (max-width:1279px) {
-    .h100vh, .h1080M, ._16_9 {
+    .h100vh, ._16_9 {
         max-height:none !important;
         height: auto !important;
         aspect-ratio: auto;
