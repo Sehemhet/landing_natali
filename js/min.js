@@ -133,3 +133,38 @@ function toggleModuleDetail(moduleId) {
 
 
 
+//document.addEventListener('DOMContentLoaded', (event) => {
+//  // Получаем все ссылки в навигационном меню
+//  const menuLinks = document.querySelectorAll('nav li a');
+//
+//  // Функция для добавления или удаления активного класса
+//  function toggleActiveClass(link, add) {
+//    if (add) {
+//      link.classList.add('active_menu');
+//    } else {
+//      link.classList.remove('active_menu');
+//    }
+//  }
+//
+//  // Наблюдатель, который будет вызывать callback при пересечении секций
+//  const observer = new IntersectionObserver((entries, observer) => {
+//    entries.forEach(entry => {
+//      // Находим ссылку, соответствующую id секции
+//      const link = document.querySelector(`nav li a[href="#${entry.target.id}"]`);
+//      if (entry.isIntersecting && link) {
+//        toggleActiveClass(link, true); // Добавляем класс, если секция в области видимости
+//      } else {
+//        toggleActiveClass(link, false); // Удаляем класс, если секция не в области видимости
+//      }
+//    });
+//  }, { threshold: 0.5 }); // Настройка observer для активации, когда хотя бы 50% элемента видно
+//
+//  // Добавляем каждую секцию в наблюдение
+//  document.querySelectorAll('section').forEach(section => {
+//    observer.observe(section);
+//  });
+//});
+
+
+
+

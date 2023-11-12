@@ -1,6 +1,4 @@
-/*
-translate anim
-*/
+
 .anim_left,
 .anim_right,
 .anim_scale {
@@ -16,17 +14,9 @@ translate anim
 .anim_scale {
     transform:scale(.1);
 }
-
 .anim_active {
     transform: translate(0%,0%);
     opacity: 1;
     transform:scale(1);
     transition: all 1s;
-}
-
-:target:before {
-    content:'';
-    display:block;
-    width:100%;
-    height:50px;
 }

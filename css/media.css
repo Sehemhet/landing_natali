@@ -1,22 +1,17 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-.h100vh {height: calc(100vh - 42px);}
+.h1080M {max-height:1080px;}
+.h100vh {height: calc(100vh - 57px);}
 .Y1024 {display:none;}
 .Y480 {display:none;}
 
 @media (orientation: portrait) {
-    .h100vh, ._16_9 {
+    .h100vh, .h1080M {
         max-height:none !important;
         height: auto !important;
         aspect-ratio: auto;
     }
 }
-@media (min-width: 1921px) {
+
+@media (min-width: 1279px) {
     .h100vh {
         height: auto;
     }
@@ -25,7 +20,7 @@
     }
 }
 @media (max-width:1279px) {
-    .h100vh, ._16_9 {
+    .h100vh, .h1080M {
         max-height:none !important;
         height: auto !important;
         aspect-ratio: auto;
@@ -35,8 +30,7 @@
     }
     .wpcf7 ._1,
     .wpcf7 ._3 {
-        -ms-flex-wrap:wrap;
-            flex-wrap:wrap;
+        flex-wrap:wrap;
     }
     .in {
         padding-left:20px;
@@ -48,13 +42,10 @@
         display:none;
     }
     .Y1024 {
-        display:-webkit-box;
-        display:-ms-flexbox;
         display:flex;
     }
     #_3 ._12 {
-        -ms-flex-wrap:wrap;
-            flex-wrap:wrap;
+        flex-wrap:wrap;
     }
 }
 @media (max-width:736px) {
@@ -74,8 +65,7 @@
         text-align:end;
     }
     #_1 ._3 {
-        -ms-flex-wrap:wrap;
-            flex-wrap:wrap;
+        flex-wrap:wrap;
     }
     #_1 ._4 .l5 {
         position:static;
@@ -86,8 +76,7 @@
         text-align:start;
     }
     #_2 ._15 {
-        -ms-flex-wrap:wrap;
-            flex-wrap:wrap;
+        flex-wrap:wrap;
     }
     #_2 ._18 {
         width:100%;
@@ -104,8 +93,6 @@
         display:none;
     }
     .Y480 {
-        display:-webkit-box;
-        display:-ms-flexbox;
         display:flex;
     }
     #_1 ._4 {
@@ -127,26 +114,17 @@
         text-align:end;
     }
     #_2 ._13 .btn_wrap {
-        -webkit-box-pack:center;
-            -ms-flex-pack:center;
-                justify-content:center;
+        justify-content:center;
     }
     #_3 ._8 {
-        -ms-flex-wrap:wrap;
-            flex-wrap:wrap;
+        flex-wrap:wrap;
     }
     #_3 ._9 {
-        -webkit-box-flex:1;
-            -ms-flex:1 1 300px;
-                flex:1 1 300px;
+        flex:1 1 300px;
     }
     footer * {
-        display:-webkit-box;
-        display:-ms-flexbox;
         display:flex;
-        -webkit-box-pack:center;
-            -ms-flex-pack:center;
-                justify-content:center;
+        justify-content:center;
         width:100%;
         gap:10px;
     }
